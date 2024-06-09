@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30;
+    padding: 0;
+    background-color: #1f2b0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    color: #b4d934;
+    background-color: #7a58a4;
+    border: 1px solid #b4d934;
+    border-radius: 10px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 40px auto;
+}
+
+h2 {
+    text-align: center;
+}
+p {
+    font-size: 10px;
+}
+a {
+    font-size: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b4d934;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #b4d934;
+    border: 4px #7a58a4;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #b4d934;
+    background-color: #7a58a4;
+    border: 1px solid #b4d934;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 24px;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.all-done {
+    text-align: center;
+    font-size: 14px;
+}

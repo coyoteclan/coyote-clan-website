@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Downloads | CoYoTe' Clan*</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<!--<header>
+	 <!-- Home button to navigate to the main index.html 
+	     <a href="https://coyote.rf.gd/index.html" class="category-button">Home</a>
+	     <a href="./login/index.php" class="category-button">Login</a>
+	     <a href="./register/index.php" class="category-button">Register</a>
+	     <button class="category-button" onclick="logout(); emitPolygons()">Logout</button>
+	</header> -->
+    <div class="navbar">
+        <a href="https://coyote.rf.gd/index.html" class="category-button">Home</a>
+	    <a href="./login/index.php" class="category-button">Login</a>
+	    <a href="./register/index.php" class="category-button">Register</a>
+	    <button class="category-button" onclick="logout(); emitPolygons()">Logout</button>
+    </div>
+
+    <div id="effectContainer"></div>
+    
+    <div class="container">
+        <h1>Welcome to Our Downloads Page!</h1>
+
+        <!--<a href="https://coyote.rf.gd/index.html" class="home-button">Home</a>-->
+		<a href="submit_mod.php" class="home-button">Submit Mod</a>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search mods..." id="mod-search">
+            <button class="category-button" onclick="searchMods()">Search</button>
+        </div>
+        
+        <div class="categories">
+            <button class="category-button" onclick="filterMods('all')">All</button>
+            <button class="category-button" onclick="filterMods('weapons')">Weapons</button>
+            <button class="category-button" onclick="filterMods('maps')">Maps</button>
+            <button class="category-button" onclick="filterMods('prefabs')">Prefabs</button>
+            <button class="category-button" onclick="filterMods('skins')">Skins</button>
+            <button class="category-button" onclick="filterMods('addons')">Addons</button>
+			<button class="category-button" onclick="filterMods('misc')">Misc</button>
+			<button class="category-button" onclick="filterMods('server')">Server</button>
+        </div>
+        
+        <div class="sorting-options">
+            <label for="order-by">Order By:</label>
+            <select id="order-by" onchange="fetchmods()">
+                <option value="id">Date</option>
+                <option value="name">Name</option>
+            </select>
+            
+            <label for="sort-order">Sort Order:</label>
+            <select id="sort-order" onchange="fetchMods()">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+        
+		
+			
+        <div class="mod-listing" id="mod-listing">
+			<?php include 'fetchmods.php'; ?>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Assuming you have the fetchMods and displayMods functions in script.js
+        // Call fetchMods when the page loads
+        document.addEventListener('DOMContentLoaded', fetchMods);
+    </script>
+</body>
+</html>
