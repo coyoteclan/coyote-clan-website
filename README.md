@@ -5,6 +5,8 @@
 - Configure `htdocs\downloads\db_connection.php`
 - Upload the `htdocs` folder on your website.
 
+  If you have any trouble, don't hesitate to contact me on discord.
+
 ## Credits
 [w3schools](https://www.w3schools.com/)
 [chatgpt](https://chatgpt.com/)
