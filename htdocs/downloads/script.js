@@ -20,18 +20,6 @@ function searchMods() {
     }
 }
 
-// Update the part of script.js that fetches and displays mods
-
-// Assuming you have a function to fetch mods from fetchmods.php
-/*function fetchMods() {
-    return fetch('fetchmods.php')
-        .then(response => response.json())
-        .then(data => {
-            // Assuming data is an array of mod objects
-            displayMods(data);
-        })
-        .catch(error => console.error('Fetch error:', error));
-}*/
 function fetchMods() {
     const orderBy = document.getElementById('order-by').value;
     const sortOrder = document.getElementById('sort-order').value;
